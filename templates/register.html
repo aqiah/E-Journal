@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Luxe // Secure 🐾</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #050505 url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043') center/cover fixed;
+            color: white; height: 100vh; display: flex; align-items: center;
+        }
+        .reg-box {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 3rem; border-radius: 25px; border: 2px solid #f39c12;
+            width: 100%; max-width: 400px; margin: auto;
+        }
+        /* Secure High-Visibility Inputs */
+        .form-control { 
+            background-color: #ffffff !important; 
+            color: #000000 !important; 
+            border-radius: 12px; 
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .btn-luxe { 
+            background: #f39c12; 
+            color: white; 
+            border: none; 
+            width: 100%; 
+            padding: 10px; 
+            border-radius: 12px; 
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .error-msg { color: #ff4d6d; font-size: 0.8rem; margin-bottom: 10px; display: block; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="reg-box text-center">
+        <h2 class="mb-4">Create Account 🐾</h2>
+        
+        <form action="/register" method="POST">
+            {{ form.hidden_tag() }}
+
+            <div class="text-start">
+                {{ form.username.label(class="small opacity-75") }}
+                {{ form.username(class="form-control", placeholder="Choose Username") }}
+                {% for error in form.username.errors %}
+                    <span class="error-msg">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+
+            <div class="text-start">
+                {{ form.password.label(class="small opacity-75") }}
+                {{ form.password(class="form-control", placeholder="Set Password") }}
+                {% for error in form.password.errors %}
+                    <span class="error-msg">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+
+            {{ form.submit(class="btn btn-luxe") }}
+        </form>
+        
+        <p class="mt-3 small">Already have an account? <a href="/login" style="color:#f39c12;">Login</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

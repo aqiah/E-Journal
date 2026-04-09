@@ -1,0 +1,107 @@
+abstraction:
+-everywhere
+-no need for user to understand he underlying infrastructure
+
+
+what loud does
+-provides services
+->storage
+->compute
+->app bnane ki
+->deploy
+->test apps
+->alrdy made servoces sharing
+no utelization of Hardware
+pay n use the services
+
+
+Benefits
+-costeffective : no need of hardware
+-speed
+-global deployment
+-improved security: security responsibility of service provider
+
+
+1.Ifrstructuer as a Service
+-buying storage capacitystuff
+->infrastructure: required cheezen for system : storge capacity vm cpu etc
+-empty space given to clients
+
+2.Platform aaS
+-not empty space rather Base Requirements provided
+
+3.Software aaS
+-Premade Software/apps using 
+like GPT gemini etc
+
+
+need mechanisms that make security to platfirm n services
+-DataSecurity: at transit n at rest
+-Identity Access management: Controling Who can access Cloud resources and (lesst privilege)
+-Application Security: one made wt the cloud
+-NetworkSecurity: securing connections btw cloud/aming dffrnt cloud/platforms
+
+
+makeupo inherent: assuimg security pre imbedded ->wring
+
+
+Ransomeware aaS
+-platform making deployment of ransomeware ez
+-if no technical knowleged they can jst buy the services
+-encrypt data 
+
+Multi-Extortion Tactic: idnetdufy 4-5 pressure points
+-dleet backup
+-encrypt data
+-steal sensitive data
+-public shamin
+--SPEED
+
+Supply Chain Attacks:start of a process till end(user ko milna)
+-if cloudservice compromised:all users compromised
+-update poisoning like cloud strike 
+
+
+Identity and ACcess
+Achilles'Heel: Greek warrior
+-big whole cloud my be damaged cus of IAM Flaw
+
+
+AI
+-AI learms from all codes online which are mostly not secure, so the code generated may not be secure
+
+
+CloudMisconfiguration:
+silent breach
+-not secure api
+-no lest privilege
+-no alerts
+- no monitering
+
+
+Examples:
+-SolarWind
+-CrwodStrike
+-MicrosoftBreach: IAM not proper , attacker compromised useracs n entered the cloud platform n disrunbted
+,0trsut
+-Snowflake: Access controls flawed on user end
+->nomonitering
+
+
+
+WHY MATTERS?
+-Expandng attack surface
+->rapid growth
+->increased complexity: multicloud hybrid create new attacks
+->Configuration Errors
+
+
+
+
+
+
+
+
+
+
+
